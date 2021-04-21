@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* INDEX STYLE */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-color: #E6E6E6;
+}
+/* Variable */
+.root{
+    --bg: #efefef;
+    --text: #393939;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    width:100%; 
+    /* padding: 40px 0; */
+    border: 2px solid red;
+}
+.padding{
+    padding: 40px;
+}
+/* FLEX-BOX */
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.align-center-horizontal{
+    display: flex;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+/* HEADER STYLE */
+.header{
+    background-color: #FFFFFF;
+}
+.nav-bar{
+    text-transform: capitalize;
+}
+ul a{ 
+    text-decoration: none;
+    margin-left: 10px;
+    color: #6D6D6D;
+    font-weight: 800;
+}
+strong{
+    font-size: 29px;
+    font-weight: 900;
+}
+.active{
+    color:#7ECDC3;
+}
+/* HERO SECTION */
+.hero{
+    background: linear-gradient(to right, #0D0704, rgba(255, 255, 255,0.2)), url(../media/banner.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    /* height:100vh; */
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+}
+.small-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width:6px;
+    height:6px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.big{
+    width: 12px;
+    height: 12px;
+}
+.hero-para{
+    text-align: center;
+    text-transform: capitalize;
+    color:#fff;
+    font-size: 16px;
+}
+.angle-down-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    background-color: #69C6BA;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.angle-down-circle i{
+   color:#fff;
+}
+/* CHECK AVALABILTY */
+.check-availability{
+    background-color: #F5F5F5;
+    margin: 60px 0;
+}
+.check-availability h3{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text);
+}
+/* OUR-PRIORITY SECTION */
+.our-priority{
+    background-color: #EFEFEF;
+}
+.our-priority h2{
+  font-size:32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text)
+}
+.our-priority p{
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+.btn{
+    font-size: 12px;
+    padding: 12px 20px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+    display: inline-block;
+    background-color: #69C6BA;
+    margin: auto 0;
+}
+/* EUROPE ARTICLE */
+.background-color{
+    background-color: #ffffff;
+}
+.article-img{
+   width:50%;
+   position: relative;
+   font-size: 0;
+}
+.article-img img{
+    width:100%;
+}
+.square-chevron{
+    width:50px;
+    height:50px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.6);
+}
+.article{
+    width:500px;
+}
+.europe-para{
+    background-color: #69C6BA;
+}
+.europe-btn{
+    background-color: #fff;
+    color:#69C6BA;
+}
+.white-circle{
+    width:10px;
+    height:10px;
+    background-color: #fff;
+}
+.europe{
+    position: absolute;
+    left:40%;
+}
+.article h4{
+   font-size: 26px;
+   font-weight: 400;
+   text-transform: capitalize;
+   color: #fff;
+}
+.article p{
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    margin:8px 0;
+}
+/* ASIA ARTICLE */
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.asia{
+    position: absolute;
+    right:40%;
+}
+.asia-para{
+   background-color: #C66995;
+}
+.asia-btn{
+    background-color: #fff;
+    color: #C66995;
+}
+/* AMERICA ARTICLE */
+.america{
+    position: absolute;
+    left:40%;
+}
+.america-para{
+    background-color:#69C6BA;
+}
+.america-btn{
+    background-color: #fff;
+    color: #69c6ba;
+}
+/* CONTINENT  */
+.continent{
+    background-color: #69C6BA;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.continent-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.continent-img span{
+    display: block;
+}
+.continent-img img{
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid red;
+}
+.asia-color{
+    background-color: #C66995;
+}
+/* HOTEL */
+.hotel{
+    padding: 0px 100px;
+    border: 1px solid blue;
+    /* font-size: 0; */
+}
+.hotel img{
+    font-size: 0;
+}
+.container-hotel{
+    padding: 39px;
+    background-color: #FFFFFF;
+    border: 1px solid grey;
+}
+.container-hotel h5{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+.container-dollar{
+   
+}
+
+
