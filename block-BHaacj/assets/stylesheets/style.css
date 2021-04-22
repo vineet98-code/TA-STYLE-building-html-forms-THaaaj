@@ -290,24 +290,30 @@ h1{
 /* CONTINENT  */
 .continent{
     background-color: #69C6BA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:0;
 }
-.flex-wrap{
-    flex-wrap: wrap;
+.continent p{
+    text-align: center;
+    font-size:16px;
+    text-transform: uppercase;
+    color: #ffff;
+    margin-top: 8px;
 }
 .continent-img{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.continent-img span{
-    display: block;
+.continent .grow{
+    padding: 5px 0;
 }
-.continent-img img{
-    width: 100%;
-    margin: 10px 0;
-    border: 1px solid red;
+.grow .active{
+    background-color: #C66995;
 }
-.asia-color{
+.continent .grow:hover{
     background-color: #C66995;
 }
 /* HOTEL */
@@ -320,17 +326,29 @@ h1{
     font-size: 0;
 }
 .container-hotel{
-    padding: 39px;
+    padding: 31px;
     background-color: #FFFFFF;
     border: 1px solid grey;
 }
 .container-hotel h5{
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.container-hotel span{
+    display: inline-block;
+    color: #C66995;
     font-weight: 500;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.container-hotel p {
+    text-transform: capitalize;
 }
 .container-dollar{
-   
+   background-color: #69C6BA;
+   /* padding: 40px; */
+   width:100%;
 }
 
 
