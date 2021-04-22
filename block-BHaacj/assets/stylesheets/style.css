@@ -71,7 +71,7 @@ body{
     margin: 0 auto;
     width:100%; 
     /* padding: 40px 0; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .padding{
     padding: 40px;
@@ -92,12 +92,16 @@ body{
 }
 .flex{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .space-between{
     display: flex;
     justify-content: space-between;
     align-items:center;
+}
+.column{
+    flex-direction: column;
 }
 /* HEADER STYLE */
 .header{
@@ -171,6 +175,32 @@ h1{
    color:#fff;
 }
 /* CHECK AVALABILTY */
+form{
+    background-color: #ffff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px;
+    margin-top: 60px;
+}
+.item-start{
+    align-items: flex-start;
+}
+.flex-46{
+    flex: 0 1 46%;
+}
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.form-control{
+    display: inline-block;
+    width: 100%;
+    border:0;
+    outline: 0;
+    padding: 10px 16px;
+}
 .check-availability{
     background-color: #F5F5F5;
     margin: 60px 0;
@@ -238,9 +268,11 @@ h1{
     color:#69C6BA;
 }
 .white-circle{
-    width:10px;
-    height:10px;
+    width:32px;
+    height:32px;
     background-color: #fff;
+    border-radius: 50%;
+
 }
 .europe{
     position: absolute;
@@ -316,39 +348,136 @@ h1{
 .continent .grow:hover{
     background-color: #C66995;
 }
-/* HOTEL */
-.hotel{
-    padding: 0px 100px;
-    border: 1px solid blue;
-    /* font-size: 0; */
+/* RECOMMENED PLACE*/
+.recommented-place{
+    padding: 20px 0;
+    
 }
-.hotel img{
-    font-size: 0;
+.recommended-item{
+   max-width:900px;
+   margin: 0 auto;
+   background-color: #69C6BA; 
+   margin-top: 32px;
+  
 }
-.container-hotel{
-    padding: 31px;
-    background-color: #FFFFFF;
-    border: 1px solid grey;
+
+/* .recommended-item img{
+  width:100%;
+  font-size: 0;
+} */
+.item-stretch{
+    align-items: stretch;
 }
-.container-hotel h5{
-    text-transform: capitalize;
-    font-size: 18px;
+.recommended-item-content{
+  padding: 32px;
+  background-color: #fff;
+  position: relative;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px ;
+}
+.btn-curve{
+  position: absolute;
+  right: -15px;
+  top: 0;
+  height:100%;
+}
+.recommended-item-content h5{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.recommended-item-content h6{
+    font-size: 14px;
     font-weight: 600;
-}
-.container-hotel span{
-    display: inline-block;
     color: #C66995;
-    font-weight: 500;
-    margin: 10px 0;
+    margin-bottom: 12px;
+}
+.recommended-item-content p{
+    font-size: 14px;
+    font-weight: 400;
     text-transform: capitalize;
 }
-.container-hotel p {
-    text-transform: capitalize;
+.pricing h4{
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
 }
-.container-dollar{
-   background-color: #69C6BA;
-   /* padding: 40px; */
-   width:100%;
+.pricing a{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffff;
+    text-decoration: none;
+    margin-top: 10px;
 }
-
-
+.flex-30{
+    flex: 0 1 30%;
+    font-size:0px;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-20{
+   flex: 0 1 20%;
+}
+.recommended-btn{
+    text-align: center;
+    margin-top: 32px;
+}
+/* CONTACT*/
+.contact{
+    position: relative;
+}
+.contact iframe{
+    width: 100%;
+}
+.contact form{
+    position: absolute;
+    top: 0;
+    right: 88px;
+    z-index: 2;
+    width:45%;
+    margin-top: 20px;
+}
+.overlay{
+    position: relative;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.6);
+}
+.submit-btn{
+    width:100%;
+}
+.name-email{
+    margin-right: 10px;
+}
+.form-control{
+    background-color: #F5F5F5;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 0;
+    width:100%;
+    border: 1px solid transparent;
+}
+.btn-submit{
+    width:100%;
+    margin-top:24px;
+}
+.form-control:focus{
+    border: 1px solid blue;
+}
+fieldset{
+    background-color: #fff;
+    padding:10px;
+}
+/* FOOTER */
+.footer{
+    background-color: #69C6BA;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer-small small{
+text-transform: capitalize;
+}

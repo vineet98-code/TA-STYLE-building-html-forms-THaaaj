@@ -43,20 +43,59 @@
                 <span class="angle-down-circle">
                     <i class="fas fa-angle-down"></i>
                 </span>
-                <section class="check-availability container">
-                    <div class="container padding">
-                        <div class="sub-heading-check-availability space-between">
-                            <h3>choose your destination</h3>
-                            <h3>how many rooms</h3>
-                            <h3>adult</h3>
-                            <h3>children</h3>
+                <form class="space-between item-start" action="">
+                    <fieldset class="flex-46">
+                        <label for="">Choose your destination</label>
+                        <input class="form-control" type="text" id="destination" name="destination" placeholder="Type your destination">
+                        <div class="space-between">
+                            <div>
+                                <label for="check-in">Check In Date</label>
+                                <input class="form-control" name="chek-in" type="date" placeholder="Check In" id="check-in">
+                            </div>
+                            <div>
+                                <label for="check-out">Check Out Date</label>
+                                <input class="form-control" name="check-out" type="text" placeholder="Check Out" id="check-out">
+                            </div>
                         </div>
-                        <blockquote>
-                            <span>Type your destination...</span>
-                        </blockquote>
-                    </div>
-                     
-                </section>
+                    </fieldset>
+                    <fieldset class="flex-46">
+                        <div class="space-between">
+                            <div>
+                                <label for="room">How many Rooms?</label>
+                                <select class="form-control" name="" id="">
+                                    <option value="">1 Room</option>
+                                    <option value="">2 Room</option>
+                                    <option value="">3 Room</option>
+                                    <option value="">4 Room</option>
+                                    <option value="">5 Room</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="adult">Adult</label>
+                                <select class="form-control" name="adult" id="adult">
+                                 <option value="">1 </option>
+                                 <option value="">2 </option> 
+                                 <option value="">3 </option>
+                                 <option value="">4 </option>
+                                 <option value="">5 </option>
+                              </select>
+                            </div>
+                            <div>
+                                <label for="children">Children</label>
+                                <select class="form-control" name="children" id="children">
+                                  <option value="">1 </option>
+                                  <option value="">2 </option>
+                                  <option value="">3 </option>
+                                  <option value="">4 </option>
+                                  <option value="">5 </option>
+                              </select>
+                            </div>
+                        </div>
+                        <input class="btn btn-submit" type="submit" value="check Availability">
+                        
+                    </fieldset>
+                </form>
         </section>
         <section class="our-priority container">
             <div class="container padding">
@@ -73,17 +112,16 @@
                     <img src="assets/media/tm-img-01.jpg" alt="">
                 </div>
                 <div class="europe align-center">
-                    <div class="">
-                        <div class="square-chevron">
+                    <div>
+                        <div class="square-chevron align-center">
                             <div class="white-circle">
                                 <i class="fas fa-chevron-square-left"></i>
                             </div>
                         </div>
-                        <div class="square-chevron">
-                            <div class=" ">
+                        <div class="square-chevron align-center">
+                            <div class="white-circle">
                                 <i class="fas fa-chevron-square-right"></i> 
                             </div>
-                            
                         </div>
                     </div>
                     
@@ -101,17 +139,16 @@
                     <img src="assets/media/tm-img-02.jpg" alt="">
                 </div>
                 <div class="asia align-center row-reverse">
-                    <div class="">
-                        <div class="square-chevron">
-                            <div class="white-circle">
+                    <div>
+                        <div class="square-chevron align-center">
+                            <div class="white-circle ">
                                 <i class="fas fa-chevron-square-left"></i>
                             </div>
                         </div>
-                        <div class="square-chevron">
-                            <div class=" ">
+                        <div class="square-chevron align-center">
+                            <div class="white-circle">
                                 <i class="fas fa-chevron-square-right"></i> 
                             </div>
-                            
                         </div>
                     </div>
                     
@@ -129,15 +166,15 @@
                     <img src="assets/media/tm-img-03.jpg" alt="">
                 </div>
                 <div class="america align-center row-reverse">
-                    <div class="">
+                    <div>
                         <div class="square-chevron">
-                            <div class="white-circle">
+                            <div class="white-circle ">
                                 <i class="fas fa-chevron-square-left"></i>
                             </div>
                         </div>
                         <div class="square-chevron">
-                            <div class=" ">
-                                <i class="fas fa-chevron-square-right"></i> 
+                            <div class="white-circle">
+                               <i class="fas fa-chevron-square-right"></i> 
                             </div>
                             
                         </div>
@@ -181,21 +218,101 @@
                 <p>antartica</p>
             </div>
         </section>
-        <section class="hotel container align-center ">
-           <img src="assets/media/tm-img-06.jpg" alt="">
-           <div class="container-hotel">
-              <h5>asia resort hotel</h5>
-              <span>singapore</span>
-              <p>sed egestas, odio bibbendum mattis, quam odio hendriet risus, eu varius eros lacus sit amet letus 
-                Donus blandit luctus dictum  
-              </p> 
-           </div>
-           <img src="assets/media/button-curve.png" alt="">
-           <div class="container-dollar">
-               <span>$440</span>
-               <span>continue reading</span>
-           </div>
+        <section class="recommented-place container ">
+            <article class="flex recommended-item item-stretch">
+                <div class= "flex-30">
+                    <img src="assets/media/tm-img-06.jpg" alt=""> 
+                </div>
+                <div class="flex-50 recommended-item-content">
+                   <h5>Asia resort hotel</h5>
+                   <h6>Singapore</h6>
+                   <p>Sed egestas, odio bibbendum mattis, quam odio hendriet risus, eu varius eros lacus sit amet letus 
+                     Donus blandit luctus dictum  
+                   </p> 
+                   <img class="btn-curve" src="assets/media/button-curve.png" alt="">
+                </div>
+                <div class="flex-20 pricing align-center column">
+                    <h4>$440</h4>
+                    <a href="#">continue reading</a>
+                </div>
+            </article>
+            <article class="flex recommended-item item-stretch">
+                <div class= "flex-30">
+                    <img src="assets/media/tm-img-07.jpg" alt=""> 
+                </div>
+                <div class="flex-50 recommended-item-content">
+                   <h5>nullum eget est a nisl</h5>
+                   <h6>yangon, myanmmar</h6>
+                   <p>Sed egestas, odio bibbendum mattis, quam odio hendriet risus, eu varius eros lacus sit amet letus 
+                     Donus blandit luctus dictum  
+                   </p> 
+                   <img class="btn-curve" src="assets/media/button-curve.png" alt="">
+                </div>
+                <div class="flex-20 pricing align-center column">
+                    <h4>$440</h4>
+                    <a href="#">continue reading</a>
+                </div>
+            </article>
+            <article class="flex recommended-item item-stretch">
+                <div class= "flex-30">
+                    <img src="assets/media/tm-img-05.jpg" alt=""> 
+                </div>
+                <div class="flex-50 recommended-item-content">
+                   <h5>proin interdum ullamcorper</h5>
+                   <h6>bangkok, thailand</h6>
+                   <p>Sed egestas, odio bibbendum mattis, quam odio hendriet risus, eu varius eros lacus sit amet letus 
+                     Donus blandit luctus dictum  
+                   </p> 
+                   <img class="btn-curve" src="assets/media/button-curve.png" alt="">
+                </div>
+                <div class="flex-20 pricing align-center column">
+                    <h4>$440</h4>
+                    <a href="#">continue reading</a>
+                </div>
+            </article>
+            <article class="flex recommended-item item-stretch">
+                <div class= "flex-30">
+                    <img src="assets/media/tm-img-04.jpg" alt=""> 
+                </div>
+                <div class="flex-50 recommended-item-content">
+                   <h5>lorem ipsum dolor sit</h5>
+                   <h6>vientiane, laos</h6>
+                   <p>Sed egestas, odio bibbendum mattis, quam odio hendriet risus, eu varius eros lacus sit amet letus 
+                     Donus blandit luctus dictum  
+                   </p> 
+                   <img class="btn-curve" src="assets/media/button-curve.png" alt="">
+                </div>
+                <div class="flex-20 pricing align-center column">
+                    <h4>$440</h4>
+                    <a href="#">continue reading</a>
+                </div>
+            </article>
+            <div class="recommended-btn">
+                <a class="btn" href="#">show more place</a>
+            </div>
         </section>
-    </main>  
+        <section class="contact container">
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919684030994!2d76.35140991501412!3d32.20639478114801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1619080737788!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <div class="overlay"></div>
+                <form action="action">
+                  <fieldset>
+                    <div class="space-between">
+                        <input class="form-control name-email" name ="name" type="text" placeholder="Name">
+                        <input class="form-control" name ="email" type="email" placeholder="Email">
+                    </div>
+                    <input class="form-control" name="subject" type="text" placeholder="Subject">
+                    <textarea class="form-control" name="message"  rows="8"></textarea>
+                    <input class="btn submit-btn" type="submit" value="send message now" >
+                  </fieldset>
+                </form>
+            </section>
+    </main> 
+    <footer class="footer container">
+        <div class="footer-small ">
+            <small>copyright &copy 2020 your company. designed by template mo. </small>
+        </div>
+    </footer> 
 </body>
 </html>
